@@ -1,0 +1,33 @@
+#!/bin/bash -e
+
+usage () {
+  echo "Usage: $0 <me|jabra|verifa>"
+  exit 1
+}
+
+if [ -z "$*" ]; then usage ; fi
+
+case $1 in
+
+  me)
+    git config --local user.name "Albert Rigo"
+    git config --local user.email "albert.rigo@gmail.com"
+    ;;
+
+  jabra)
+    git config --local user.name "Albert Rigo"
+    git config --local user.email "arigo@jabra.com"
+    ;;
+
+  verifa)
+    git config --local user.name "Albert Rigo"
+    git config --local user.email "arigo@verifa.io"
+    ;;
+
+  *)
+    usage
+    ;;
+esac
+
+git config user.name
+git config user.email

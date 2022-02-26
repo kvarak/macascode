@@ -1,10 +1,10 @@
 
 # Setup the Mac
 
-1. Set bash as default
+## Set bash as default
 - chsh -s /bin/bash
 
-2. Install Homebrew
+## Install Homebrew
 - Installing Xcode’s Command Line Tools
 `xcode-select --install`
 - Installing and Setting Up Homebrew
@@ -13,15 +13,18 @@
 Add Homebrew's executable directory to the front of the PATH in ~/.bash_profile
 `export PATH=/usr/local/bin:$PATH`
 
-3. Get the profile files
+## Get the profile files
 - .ssh
 - .bash_profile
 - .gitconfig
 - synergy.conf
 
-4. Tools
+## Tools
+```
 brew update
-# base
+```
+### base
+```
 brew install git
 brew install python
 brew install r
@@ -32,7 +35,10 @@ brew install --cask docker
 brew install --cask visual-studio-code
 brew install --cask the-unarchiver
 brew install postgresql@12   # brew services start postgresql@12
-# extra
+brew install --cask notion
+```
+### extra
+```
 brew install wget
 brew install ansible
 brew install --cask synergy
@@ -45,25 +51,26 @@ brew install --cask skype
 brew install --cask dropbox
 brew install --cask discord
 brew install --cask remarkable
-# making
+```
+### making
+```
 brew install --cask ultimaker-cura
 brew install --cask balenaetcher
 brew install --cask arduino
 brew install platformio
 brew install swi-prolog
 brew install libgit2
-# coding
+```
+### coding
+```
 xcode-select --install
 brew install azure-cli
+```
 
-5. Settings
-Code from commandline?
+### arduino
 
-# ???
-arduino
-
-6. Ruby
-
+### Ruby
+```
 brew update
 brew upgrade ruby
 brew install ruby-build
@@ -71,4 +78,4 @@ brew install rbenv
 
 rbenv install 3.0.1
 rbenv global 3.0.1
-
+```
